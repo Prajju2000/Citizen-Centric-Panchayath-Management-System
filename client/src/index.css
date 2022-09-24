@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Disable Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* User Dashboard Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content h2 {
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Admin Tables */
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 50px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  /* overflow: hidden; */
+  box-shadow: 0 0 20px rgb(29, 78, 216);
+}
+
+.content-table thead tr {
+  background-color: #1430bd;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  font-size: 1.1em;
+}
+
+.content-table tbody tr {
+  font-weight: 500;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1d4ed8;
+}
+
+/* Admin Complaint Table */
+.complaints {
+  border-collapse: collapse;
+  margin: 0px 50px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  /* overflow: hidden; */
+  box-shadow: 0 0 20px rgb(29, 78, 216);
+}
+
+/* Admin Dashboard Table */
+.dashboard tbody tr {
+  border-bottom: 1px solid #dddddd;
+  font-weight: 500;
+}
+
+/* Admin Upcoming Event Table */
+.upcoming {
+  border-collapse: collapse;
+  margin: 25px 50px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px #099823;
+}
+
+.upcoming thead tr {
+  background-color: #099823;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.upcoming tbody tr:last-of-type {
+  border-bottom: 2px solid #099823;
+}
+
+/* Admin Upcoming Event Table */
+.past {
+  border-collapse: collapse;
+  margin: 25px 50px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px #f6f672;
+}
+
+.past thead tr {
+  background-color: #f6f672;
+  color: #000000;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.past tbody tr:last-of-type {
+  border-bottom: 2px solid #f6f672;
+}
+
+/* User View Tender Table */
+.tender {
+  margin: 0px 50px;
+  min-width: 400px;
+  font-weight: 500;
+}
+
+.tender thead tr {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.tender th,
+.tender td {
+  padding: 12px 15px;
+  font-size: 1.1em;
+  border: 2px dashed black;
+}
+
+/* User Service Status Table */
+.serviceStatus thead tr th {
+  background-color: #c4b5fd;
+  padding: 12px 15px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+
+.serviceStatus tbody tr td {
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.serviceStatus tbody tr:nth-of-type(even) {
+  background-color: #ede9fe;
+}
+
+/* User Tender Status Table */
+.tenderStatus thead tr th {
+  background-color: #67e8f9;
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+
+.tenderStatus tbody tr td {
+  padding: 8px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.tenderStatus tbody tr:nth-of-type(even) {
+  background-color: #cffafe;
+}
+
+/* User Payment Status Table */
+.paymentStatus thead tr th {
+  background-color: #7dd3fc;
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+
+.paymentStatus tbody tr td {
+  padding: 8px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.paymentStatus tbody tr:nth-of-type(even) {
+  background-color: #e0f2fe;
+}
+
+/* User Complaints Status Table */
+.complaintStatus thead tr th {
+  background-color: #fcd34d;
+  padding: 12px 15px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+
+.complaintStatus tbody tr td {
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.complaintStatus tbody tr:nth-of-type(even) {
+  background-color: #fef3c7;
+}
+
+/* User Notifications Table */
+.notification thead tr th {
+  background-color: #bef264;
+  padding: 12px 15px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 2px solid white;
+}
+
+.notification tbody tr td {
+  font-weight: 500;
+  padding: 8px 15px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.notification tbody tr:nth-of-type(even) {
+  background-color: #ecfccb;
+}
+
+.loader {
+  margin: auto;
+  margin-top: 25%;
+}
